@@ -62,7 +62,8 @@ def get_database_vars(config_vars):
     )
 
     return {
-        "DATABASE_PASS": db_match.group(1),
-        "DATABSE_HOST": db_match.group(2),
-        "DATBASE_NAME": db_match.group(3),
+        "DATABASE_USERNAME": db_match.group(1),
+        "DATABASE_PASS": db_match.group(2),
+        "DATABASE_HOST": db_match.group(3),
+        "DATABASE_NAME": db_match.group(4),
     }
